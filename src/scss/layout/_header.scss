@@ -1,0 +1,166 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+.header {
+  height: 160px;
+  background-color: #fff;
+  &__container {
+    position: relative;
+  }
+  &__inner {
+    position: absolute;
+    top: 0;
+    left: 12px;
+    right: 12px;
+    display: flex;
+    justify-content: space-between;
+    padding: 56px 0 0 0;
+    background-color: #fff;
+  }
+  &__left {
+    padding: 0 0 0 80px;
+  }
+  &__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+}
+
+.nav {
+  margin-bottom: 30px;
+  font-family: Inter, sans-serif;
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+  &__item {
+    &:not(:last-child) {
+      margin: 0 20px 0 0;
+      @media (min-width: 1400px) {
+        margin: 0 40px 0 0;
+      }
+    }
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #777;
+
+    .arrow-down {
+      margin-left: 10px;
+    }
+    &:hover {
+      color: #000;
+    }
+  }
+}
+
+.logo {
+  display: inline-flex;
+  width: 200px;
+  @media (min-width: 1400px) {
+    width: 282px;
+  }
+}
+
+.info-text {
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  letter-spacing: 0.2em;
+  color: #afafaf;
+}
+
+.user-data {
+  font-family: Roboto, sans-serif;
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+  &__item {
+    &:not(:last-child) {
+      margin-right: 60px;
+    }
+  }
+  &__link {
+    font-size: 18px;
+    position: relative;
+    span {
+      position: absolute;
+      font-size: 11px;
+      line-height: calc(13 / 11 * 100%);
+      color: #c4c4c4;
+    }
+  }
+}
+
+.company-phone {
+  font-family: Roboto, sans-serif;
+  margin: 0 0 25px 0;
+  padding: 0 30px 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__top {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__insta {
+    font-size: 24px;
+  }
+
+  &__link {
+    color: #6d6d6d;
+
+    &--number {
+      font-size: 20px;
+      line-height: 23px;
+      font-weight: 400;
+      margin: 0 0 20px 0;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+    }
+    &--location {
+      font-size: 13px;
+      font-weight: 300;
+      line-height: 16px;
+    }
+  }
+}
+
+.search {
+
+  &__box {
+    position: relative;
+    padding: 20px 20px 20px 20px;
+    width: 320px;
+    @media (min-width: 1400px) {
+      width: 385px;
+    }
+  }
+  &__input {
+    padding: 20px 0 20px 30px;
+    background-color: #E1E1E1;
+    opacity: 0.85;
+    width: 100%;
+  }
+  &__icon {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+  }
+}
